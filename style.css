@@ -1,0 +1,9 @@
+.file-btn{
+    float: left;
+    padding:10px 15px;
+    border-radius: 4px;
+    margin:0px 12px;
+}
+.file-btn:hover{
+    background:lightblue;
+}
