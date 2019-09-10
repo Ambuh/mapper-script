@@ -12,7 +12,15 @@ $(document).ready(function(){
      testAnim("pulse",this,$(this).attr('class'));
   });
   setTimeout(function(){  typeWriter();  },1000);sliderLoad();
- 
+   
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 255){
+       $("#menu").css({"opacity":"1"});
+    }else{
+      $("#menu").css({"opacity":".5"});
+    }
+  
+  });
 
 });
 function testAnim(x,elem,cls='') {
