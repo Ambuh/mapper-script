@@ -1,27 +1,61 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    
-     <link rel="stylesheet" href="style.css">  </head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+     <link rel="stylesheet" href="style.css"> 
+     <link rel="stylesheet" href="rentol.css">
+     <link rel="stylesheet" href="menu.css">
+     <title>My Portfolio</title>
+    </head>
   <body>
-   
-   <div id='RevFile' class='file-btn file-left'>Revert</div>
-   <div id='SaveFile' class='file-btn file-left'>Save Html</div>
-   <div id='ShowFile' class='file-btn file-left'>Show File</div>
-
-   <div class=''>
-      <textarea id='markdown' class='markdown'>
-
-      </textarea>
-      <div id='htmlView'>
-
-      </div>
-   </div>
-   
-   <script src="./renderer.js">
+    <section 
+    class='face r3-full r3-left' 
+    style='background:url(launcher.jpg) ;
+           background-size:cover;background-repeat:no-repeat;
+           background-size: cover;  
+           background-repeat: no-repeat; 
+           height: 550px;width:100%;float:left'>
+   <nav class='r3-left r3-padding' style='width:30%;margin-top:25%'>
     
+    <span style='font-size:30px;' class='r3-left r3-text-white r3-full'>
+      <div class='r3-left r3-text-white'>HI I'M dev</div>
+      <div class='r3-text-green r3-left'>Ambrose</div> </span>
+
+      <tag class='r3-left r3-full r3-text-white' id='tag'></tag>
+
+       <tag class='r3-left r3-full'></tag>
+
+     </nav>
+
+     <div id='bounce' 
+     class='r3-right r3-white r3-padding-right r3-round-big' 
+     style='background:url(me.jpg);
+            background-size:cover;
+            width:150px;
+            height:150px;
+            margin-top:25%;
+            border-radius:50%
+            ;margin-right:2%;float:right'></div>
+    <div class='r3-full r3-left r3-padding-top'
+     style='z-index:100;background: white;opacity: 0.5;filter: alpha(opacity=60);position:fixed' >
+        <a class='r3-left ico-holder'>
+         <section style='border-radius:50%;border:3px solid green;padding: 10px 20px;margin: 10px;'>
+           <nav style='float: left; font-size: 12px;margin-top: 42%;'>Dev</nav>
+                <nspan style='color: green;font-size: 30px;'>A</nspan> </section>
+                    </a>
+             <section class='r3-right r3-padding-top' style='margin-top:30px'>
+              <a href='' style='text-decoration:none' class='r3-menu r3-margin-right r3-margin-left r3-padding r3-round'>Home</a>
+              <a href='' style='text-decoration:none' class='r3-menu r3-margin-right r3-margin-left r3-padding r3-round'>About Me</a>
+              <a href='' style='text-decoration:none' class='r3-menu r3-margin-right r3-margin-left r3-padding r3-round'>Contact Me</a>
+              <a href='' style='text-decoration:none' class='r3-menu r3-margin-right r3-margin-left r3-padding r3-round'>Blog</a>
+            </section>
+           
+            </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="render.js">
    </script>
   </body>
 </html>
