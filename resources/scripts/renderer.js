@@ -21,11 +21,26 @@ $(document).ready(function(){
     }
   
   });
- const str="<div class='phone-menu'> <nav class='ph-menu'>Home</nav> <nav class='ph-menu'>About Me</nav> <nav class='ph-menu'>Contact Me</nav> <nav class='ph-menu'>My Blog</nav> </div>";
+ const str="<div class='phone-menu'> <nav class='ph-menu'><a href='/'>Home</a></nav> <nav class='ph-menu'><a href='/about'>About Me</a></nav> <nav class='ph-menu'><a href='/contact'>Contact Me</a></nav> <nav class='ph-menu'><a href='/blog'>My Blo</a></nav> </div>";
 
   if(getPhoneAttr() <516){
    //  $(".face").append(str);
      $("body").append(str);
+     var let_intances_run=0;
+     $(".phone-menu a").click(function(e){
+         if(let_intances_run==0){
+            e.preventDefault();
+          let doc= $("body section *").toArray();
+         for(let i=0;i<doc.length;i++){
+          
+            $(doc[i]).addClass("flipOutX");
+           
+            let_intances_run=1;
+         }
+         window.location = $(this).attr('href');
+        }
+         
+     });
     }
 });
 function testAnim(x,elem,cls='') {

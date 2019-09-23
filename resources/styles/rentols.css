@@ -245,4 +245,22 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
   box-shadow: 10px 1px 2px 0px ;
 }.r3-full{
   width:100%;
+}#main{
+  background-size:cover !important;;
+  background-repeat: no-repeat !important;; 
+  height: 550px;
+  width:100%;
+  float:left;
+  display: flex;
+  flex-direction: column
+}#main span{
+  margin-top: 26%;
+  width: 30%;
+  float: left;
+}#main #tag{
+  width: 28%;
+ 
+}#bounce{
+  position: absolute;
+  left: 86%;
 }

@@ -3649,11 +3649,11 @@
     display: none;
   }
   .face{
-    max-height: 340px;
+    min-height: 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+      
   }.face #tag{
      width: 89%
   }
@@ -3694,15 +3694,18 @@
   background: #0c4e2d;
    top: 94%;
    display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    align-items: start;
 }
-.phone-menu .ph-menu{
+.phone-menu .ph-menu a{
    color: white !important;
    float: left;
   padding: 15px !important;
   margin: 0px !important;
   cursor: pointer;
-  }#main{
+  align-self: start;
+  text-decoration: none;
+  }#mainer{
     padding: 2% !important;
     width: 90% !important;;
     margin-top: 48% !important;; 
@@ -3716,6 +3719,18 @@
     margin-left: 10% !important;
     margin-top: 20% !important;
   }
-
+#main{
+  background-size:contain !important;;
+  background-repeat: no-repeat; 
+  height: 340px;
+  width:100%;
+  float:left
+  }#main #tag{
+    width: 70%;
+    padding: 1%;
+  }#main span{
+    padding: 1%;
+    margin-top:50%
+  }
 }
 

@@ -6,8 +6,7 @@
 
 @font-face{
 	font-family:'raleway';
-	/*src:url('COCKB___.TTF');*/
-    src:url('../../resources/fonts/Raleway-Regular.ttf');
+	src:url('../../resources/fonts/Raleway-Regular.ttf');
 }
 @font-face{
 	font-family:'Venera';
@@ -21,7 +20,6 @@
 }
 @font-face{
 	font-family: 'Exo 2', sans-serif;
-	/*src:url('QuicksandBook-Regular.eot');*/
 	src: url('../../resources/fonts/');
 }
 
